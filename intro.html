@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--分頁顯示的名稱  A-4 -->
+<title>台北-美食推薦</title>
+		
+<!--  引入自己寫的CSS  A-2-->
+<link href="style.css" rel="stylesheet" type="text/css">
+	
+<!--ctrl+/ 打註解 : 這4個link 是給 bootstrap用的 B-2 -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+       
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!--給導覽列一個名字，叫做"bar"-->
+
+<!-- D-1 複製index.html 裡的導覽列, 一整個section 都要複製 -->
+<section id="bar">
+		<nav class="navbar navbar-expand-md  navbar-dark  " style="background-color: skyblue;">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<div class="navbar-nav mr-auto">
+						<!--class中的 avtive 代表被選擇中，所以在index.html中，active效果要放在"首頁"這個字上，在intro.html中，active效果要放在"自我介紹"這個字上-->
+					<a class="nav-item nav-link" href="index.html">  Home </a>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle active"" href="intro.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  Food
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						  <a class="dropdown-item" href="Taipei.html">北部美食推薦</a>
+						  <a class="dropdown-item" href="Taichung.html">其他美食推薦</a>
+						 </div>
+					</li>
+					<a class="nav-item nav-link" href="QA.html">景點</a>	
+					<a class="nav-item nav-link" href="contactus.html">End</a>
+					</div>
+	
+			</div>
+			
+		</nav>
+
+</section>
+
+			
+<section id="taipei1">
+	<div class="container">
+		<div class="row">
+			<div class="col-3">
+				
+			</div>
+			
+			<div class="col-6">
+					
+				<nav class="navbar navbar-light" style="background-color: white;">
+				  <form class="form-inline" >
+					<a class="btn " active href="Taipei.html">
+					<button class="btn btn-info btn-lg" type="button">台北</button>
+					</a>&nbsp;
+					<a class="btn " href="New Taipei.html">
+					<button class="btn btn-outline-info btn-lg" type="button">新北</button>
+					</a>&nbsp;
+					<a class="btn " href="Yilan.html">
+					<button class="btn btn-outline-info btn-lg" type="button">宜蘭</button>
+					</a>&nbsp;
+					<a class="btn " href="Taoyuan.html">
+					<button class="btn btn-outline-info btn-lg" type="button">桃園</button>
+					</a>
+				  </form>
+				</nav>			 
+				
+			</div>
+			
+			<div class="col-3">
+				<p style="color:red;">(點圖片可連結到圖片來源網址)</p>				
+			</div>
+		</div>
+	</div>
+</section>
+
+<h4 style="margin-left:250px; font-weight:bolder;">圓山</h4>	
+<section id="taipei2">
+	<div class="container">
+		<div class="row">
+			<div class="col-3">
+				<a href="https://mnya.tw/yo/word/1072.html" target="_blank">
+				<div class="card" style="width: 18rem;">
+				  <img src="img/圓山.jpg" class="card-img-top">
+				</a>
+				  <div class="card-body" style="">
+				  <h5>圓山-MAJI集食行樂</h5>
+    			  <p class="card-text">黑媽媽臭豆腐</p>				 
+				  </div>
+				</div>
+					
+			</div>
+			
+			<div class="col-3" style="margin-left:10px;">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57842.72769858408!2d121.46168155240585!3d25.02828789744497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a94f06fd32d1%3A0xe4708cf770ca0a7c!2z6buR5aq95aq96Iet6LGG6IWQ!5e0!3m2!1szh-TW!2stw!4v1623847980377!5m2!1szh-TW!2stw" width="250" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+			
+			<div class="col-3" >
+				<a href="https://wandy8575.pixnet.net/blog/post/219026217" target="_blank">
+				<div class="card" style="width: 18rem;">
+					<img src="img/大叔食事.jpg" class="card-img-top" >
+					</a>
+					<div class="card-body">
+					<h5>圓山</h5>
+    			    <p class="card-text">大叔食事<a href="https://www.facebook.com/unclefoodday/" >(點我可連結到官方FB)</a></p>	
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="col-2" style="margin-left:10px;">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57842.73156618813!2d121.46168150881937!3d25.02827969234613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a90d6d9deadf%3A0xd3546171991a5f4f!2z5aSn5Y-U6aOf5LqL!5e0!3m2!1szh-TW!2stw!4v1623848956800!5m2!1szh-TW!2stw" width="250" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+		</div>
+	</div>
+
+<br>
+<br>
+<br>	
+<h4 style="margin-left:250px; font-weight:bolder;">士林夜市</h4>	
+	<div class="container">
+		<div class="row">
+			<div class="col-3">
+				<a href="https://nash.tw/goodfriend/" target="_blank">
+				<div class="card" style="width: 18rem;">
+				  <img src="img/好朋友涼麵.jpg" class="card-img-top">
+				</a>
+				  <div class="card-body" style="">
+					  <h5>士林夜市</h5>
+					  <p class="card-text">好朋友涼麵</p>				 
+				  </div>
+				</div>
+					
+			</div>
+			
+			<div class="col-3" style="margin-left:10px;">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.3771759115457!2d121.5233480148431!3d25.08909058394661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aebaad30b26b%3A0xb081e0513ba8b0c1!2z5aW95pyL5Y-L5ra86bq1!5e0!3m2!1szh-TW!2stw!4v1623850189392!5m2!1szh-TW!2stw" width="250" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+			
+			<div class="col-3">
+				<a href="https://mnya.tw/yo/word/1072.html" target="_blank">
+				<div class="card" style="width: 18rem;">
+				  <img src="img/家湘涼麵.jpg" class="card-img-top">
+				</a>
+				  <div class="card-body" style="">
+				  <h5>士林夜市</h5>
+    			  <p class="card-text">家湘涼麵臭豆腐</p>				 
+				  </div>
+				</div>					
+			</div>
+			
+			<div class="col-2" style="margin-left:10px;">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.369782236829!2d121.52285231484306!3d25.08934098394645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aebab02adddf%3A0x87859dcfaa9e2489!2z5a625rmY5ra86bq1!5e0!3m2!1szh-TW!2stw!4v1623851456322!5m2!1szh-TW!2stw" width="250" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+			
+			
+			
+		</div>
+	</div>
+<br>
+	<div class="container">
+		<div class="row">
+			
+			
+			<div class="col-3" >
+				<a href="https://kknews.cc/food/mlgj9bp.html" target="_blank">
+				<div class="card" style="width: 18rem;">
+					<img src="img/麻糬.jpg" class="card-img-top" >
+					</a>
+					<div class="card-body">
+						<h5>士林夜市</h5>
+						<p class="card-text">古早味手工麻糬</p>	
+						<a href="https://www.facebook.com/%E9%98%BF%E5%AC%A4%E7%9A%84%E5%8F%A4%E6%97%A9%E5%91%B3%E9%BA%BB%E7%B3%AC-571334963062629/" >(點我可連結到官方FB)</a>
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="col-3" style="margin-left:10px;">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.373709396929!2d121.5226703146105!3d25.089207983946537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aebaa58028c7%3A0xe9541cf32a68d128!2z5aOr5p6X5Y-k5pep5ZGz5omL5bel6bq757Os!5e0!3m2!1szh-TW!2stw!4v1623850518857!5m2!1szh-TW!2stw" width="250" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+			
+			<div class="col-3" >
+				<a href="https://gramho.com/media/2140812693826133627" target="_blank">
+				<div class="card" style="width: 18rem;">
+					<img src="img/木瓜牛奶.jpg" class="card-img-top" >
+					</a>
+					<div class="card-body">
+						<h5>士林夜市</h5>
+						<p class="card-text">簡記木瓜牛奶</p>	
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="col-2" style="margin-left:10px;">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.3654209993733!2d121.52238101461039!3d25.089488683946378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aebabcbdcf19%3A0xac312329e09023dd!2z57Ch6KiY5pyo55Oc54mb5aW2!5e0!3m2!1szh-TW!2stw!4v1623851704230!5m2!1szh-TW!2stw" width="250" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+		</div>
+	</div>
+</section>
+	
+</body>
+</html>

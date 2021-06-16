@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--分頁顯示的名稱  A-4 -->
+<title>東部-美食推薦</title>
+		
+<!--  引入自己寫的CSS  A-2-->
+<link href="style.css" rel="stylesheet" type="text/css">
+	
+<!--ctrl+/ 打註解 : 這4個link 是給 bootstrap用的 B-2 -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+       
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!--給導覽列一個名字，叫做"bar"-->
+
+<!-- D-1 複製index.html 裡的導覽列, 一整個section 都要複製 -->
+<section id="bar">
+		<nav class="navbar navbar-expand-md  navbar-dark  " style="background-color: skyblue;">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<div class="navbar-nav mr-auto">
+						<!--class中的 avtive 代表被選擇中，所以在index.html中，active效果要放在"首頁"這個字上，在intro.html中，active效果要放在"自我介紹"這個字上-->
+					<a class="nav-item nav-link" href="index.html">  Home </a>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle active"" href="intro.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  Food
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						  <a class="dropdown-item" href="Taipei.html">北部美食推薦</a>
+						  <a class="dropdown-item" href="Taichung.html">其他美食推薦</a>
+						 </div>
+					</li>
+					<a class="nav-item nav-link" href="QA.html">景點</a>	
+					<a class="nav-item nav-link" href="contactus.html">End</a>
+					</div>
+	
+			</div>
+			
+		</nav>
+
+</section>
+
+			
+<section id="taipei1">
+	<div class="container">
+		<div class="row">
+			<div class="col-3">
+				
+			</div>
+			
+			<div class="col-6">
+					
+				<nav class="navbar navbar-light" style="background-color: white;">
+				  <form class="form-inline" >
+					<a class="btn "  href="Taichung.html">
+					<button class="btn btn-outline-info btn-lg" type="button">中部</button>
+					</a>&nbsp;
+					<a class="btn " href="South.html">
+					<button class="btn btn-outline-info btn-lg" type="button">南部</button>
+					</a>&nbsp;
+					<a class="btn "  href="east.html">
+					<button class="btn btn-info btn-lg" type="button">東部</button>
+					</a>			
+				  </form>
+				</nav>						
+			</div>
+			
+			<div class="col-3">
+				<p style="color:red;">(點圖片可連結到圖片來源網址)</p>				
+			</div>
+		</div>
+	</div>
+</section>
+
+<h4 style="margin-left:250px; font-weight:bolder;">花蓮</h4>	
+<section id="taipei2">
+	<div class="container">
+		<div class="row">
+			<div class="col-3">
+				<a href="http://bighandsome.cptaiwantour.com/%E3%80%90%E8%8A%B1%E8%93%AE%E6%9D%B1%E5%A4%A7%E9%96%80%E5%A4%9C%E5%B8%82%E7%A7%81%E5%BF%83%E6%8E%A8%E8%96%A6%E3%80%91%E3%80%90%E9%AB%98%E5%A4%A7%E4%BF%A0%E6%B5%B7%E9%AE%AE%E7%87%92%E7%83%A4bar/" target="_blank">
+				<div class="card" style="width: 18rem;">
+				  <img src="img/高大俠.jpg" class="card-img-top">
+				</a>
+				  <div class="card-body" style="">
+				  <h5>東大門夜市</h5> 
+				  <p class="card-text">高大俠海鮮燒烤BAR</p>				  
+				  </div>
+				</div>					
+			</div>
+			
+			<div class="col-3" style="margin-left:10px;">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3645.6936285696893!2d121.60912571458503!3d23.971271584480967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34689feb477859eb%3A0x577c26f5393c2b15!2z6auY5aSn5L-g5rW36a6u54eS54OkQmFy!5e0!3m2!1szh-TW!2stw!4v1623858548271!5m2!1szh-TW!2stw" width="250" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>			
+			</div>			
+			
+			
+			<div class="col-3">
+				<a href="https://yoti.life/hualien-food-22/" target="_blank">
+				<div class="card" style="width: 18rem;">
+				  <img src="img/妙不可言果汁店.jpg" class="card-img-top">
+				</a>
+				  <div class="card-body" style="">
+				  <h5>東大門夜市</h5> 
+				  <p class="card-text">妙不可言果汁店</p>	
+				  </div>
+				</div>					
+			</div>
+			
+			<div class="col-2" style="margin-left:10px;">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3645.68622467353!2d121.60783431458505!3d23.971533284480888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34689fa300000001%3A0x3a59c17392eb5d0b!2z44CQ5pys5bqX44CR5aaZ5LiN5Y-v6KiA54--5omT5p6c5rGB5bqXKOiKseiTruadseWkp-mWgC_oh6rlvLflpJzluIIp!5e0!3m2!1szh-TW!2stw!4v1623858710364!5m2!1szh-TW!2stw" width="250" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>				
+		</div>
+	</div>
+<br>
+	
+</section>
+	
+</body>
+</html>

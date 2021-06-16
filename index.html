@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<!--分頁顯示的名稱 A-3 -->
+	<title>台灣美食景點推薦</title>
+	
+	<!--  引入自己寫的CSS  A-2-->
+	<link href="style.css" rel="stylesheet" type="text/css">
+
+	<!--ctrl+/ 打註解 : 這4個link 是給 bootstrap用的 B-1 -->	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</head>	
+	  
+<body>
+
+<!--給導覽列一個名字，叫做"bar"-->
+<section id="bar">
+		<nav class="navbar navbar-expand-md  navbar-dark  " style="background-color: skyblue;">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<div class="navbar-nav mr-auto">
+						<!--class中的 avtive 代表被選擇中，所以在index.html中，active效果要放在"首頁"這個字上，在intro.html中，active效果要放在"自我介紹"這個字上-->
+					<a class="nav-item nav-link active" href="index.html "> Home </a>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle " href="intro.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  Food
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						  <a class="dropdown-item" href="Taipei.html">北部美食推薦</a>
+						  <a class="dropdown-item" href="Taichung.html">其他美食推薦</a>
+						 </div>
+					</li>
+					<a class="nav-item nav-link" href="QA.html">景點</a>
+					<a class="nav-item nav-link" href="contactus.html">End</a>					 
+					</div>
+	
+			</div>
+			
+		</nav>
+
+</section>
+	
+<!--給jumbotron一個名稱，叫做 "first"-->
+<section id="first">
+  <!--套用jumbotron的樣式-->
+  <div class="jumbotron text-center "  style="background-color:aliceblue;">
+		
+  		<div class="container">
+		<div class="row">
+		
+			<div class="col-9">
+				<h1 class="display-2">台灣美食推薦</h1>
+				<p>小時候爸爸媽媽常常帶我出去玩!吃到很多很好吃的美食，所以希望能夠分享給大家~</p>
+				<P>雖然有些是觀光客美食，但我所分享的都是我個人非常喜歡的。</p>
+				<p>大家看了有興趣的話，疫情結束後可以去吃吃看!!!</p>
+				<br>
+				<p style="font-weight:normal ;">以下是我推薦的幾個想出去玩卻沒想法時能夠參考的旅遊網頁~</p>
+				<!--新增一個按鈕，套用btn-danger樣式，設定超連結href:到youtube、銘傳官網、XX系官網，而且是開一個新分頁 target="_blank"-->
+				<!-- C-5 參考連結: https://bootstrap.hexschool.com/docs/4.2/components/buttons/ -->
+				<a class="btn btn-outline-danger" href="https://www.funtime.com.tw/guide/taiwan-food-travel" role="button"  target="_blank">FUN TIME</a>
+				<a class="btn btn-outline-warning" href="https://yoke918.com/category/taiwantravel/" role="button"  target="_blank">青青小熊旅遊札記</a>
+				<a class="btn btn-outline-info" href="https://www.eztravel.com.tw/events/taiwanpromo/" role="button"  target="_blank">易遊網</a>				
+			</div>	
+			
+			<div class="col-3">
+				<img src="img/台灣美食地圖.jpg" class="card-img-top">
+				<p style="font-weight:normal ;">台灣美食地圖取自<a href="https://livwanillustration.com/" >插畫家Liv wan </a></p>
+			</div>	
+				
+		</div>
+	</div>
+				
+  </div>		
+ 
+</section>
+	
+
+	
+	
+</body>
+</html>
+

@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--分頁顯示的名稱  A-4 -->
+<title>中部-美食推薦</title>
+		
+<!--  引入自己寫的CSS  A-2-->
+<link href="style.css" rel="stylesheet" type="text/css">
+	
+<!--ctrl+/ 打註解 : 這4個link 是給 bootstrap用的 B-2 -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+       
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!--給導覽列一個名字，叫做"bar"-->
+
+<!-- D-1 複製index.html 裡的導覽列, 一整個section 都要複製 -->
+<section id="bar">
+		<nav class="navbar navbar-expand-md  navbar-dark  " style="background-color: skyblue;">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<div class="navbar-nav mr-auto">
+						<!--class中的 avtive 代表被選擇中，所以在index.html中，active效果要放在"首頁"這個字上，在intro.html中，active效果要放在"自我介紹"這個字上-->
+					<a class="nav-item nav-link" href="index.html">  Home </a>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle active"" href="intro.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  Food
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						  <a class="dropdown-item" href="Taipei.html">北部美食推薦</a>
+						  <a class="dropdown-item" href="Taichung.html">其他美食推薦</a>
+						 </div>
+					</li>
+					<a class="nav-item nav-link" href="QA.html">景點</a>	
+					<a class="nav-item nav-link" href="contactus.html">End</a>
+					</div>
+	
+			</div>
+			
+		</nav>
+
+</section>
+
+			
+<section id="taipei1">
+	<div class="container">
+		<div class="row">
+			<div class="col-3">
+				
+			</div>
+			
+			<div class="col-6">
+					
+				<nav class="navbar navbar-light" style="background-color: white;">
+				  <form class="form-inline" >
+					<a class="btn "  href="Taipei.html">
+					<button class="btn btn-info btn-lg" type="button">中部</button>
+					</a>&nbsp;
+					<a class="btn " href="South.html">
+					<button class="btn btn-outline-info btn-lg" type="button">南部</button>
+					</a>&nbsp;
+					<a class="btn "  href="east.html">
+					<button class="btn btn-outline-info btn-lg" type="button">東部</button>
+					</a>			
+				  </form>
+				</nav>						
+			</div>
+			
+			<div class="col-3">
+				<p style="color:red;">(點圖片可連結到圖片來源網址)</p>				
+			</div
+		</div>
+	</div>
+</section>
+
+<h4 style="margin-left:250px; font-weight:bolder;">台中</h4>	
+<section id="taipei2">
+	<div class="container">
+		<div class="row">
+			<div class="col-3">
+				<a href="https://travel.yahoo.com.tw/%E5%8F%B0%E4%B8%AD-%E8%B5%A4%E9%AC%BC%E7%89%9B%E6%8E%92%E5%A4%A7%E9%87%8C%E5%BA%97-%E8%B6%85%E7%BE%8E%E5%9C%B0%E4%B8%AD%E6%B5%B7%E7%B4%94%E7%99%BD%E5%BB%BA%E7%AF%89-%E5%8F%B0%E4%B8%AD%E6%9C%80%E7%BE%8E%E7%89%9B%E6%8E%92%E9%A4%A8-%E7%99%BD%E5%A4%A9%E6%99%9A%E4%B8%8A%E9%83%BD%E5%A5%BD%E6%8B%8D-052049864.html" target="_blank">
+				<div class="card" style="width: 18rem;">
+				  <img src="img/赤鬼.jpg" class="card-img-top">
+				</a>
+				  <div class="card-body" style="">
+				  <h5>赤鬼牛排</h5>  
+				  <a href="https://akaonisteak.com/meals.html" target="_blank">(點我可連結到官方網站)</a>
+				  </div>
+				</div>					
+			</div>
+			
+			<div class="col-3" style="margin-left:10px;">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.9820072824414!2d120.68297841482386!3d24.172363784382988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346917dccf01a747%3A0x239b1db9d242c9b0!2z6LWk6ay854KZ54eS54mb5o6SIOW0h-W-t-W6lw!5e0!3m2!1szh-TW!2stw!4v1623856707534!5m2!1szh-TW!2stw" width="250" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>			
+			
+			
+			<div class="col-3">
+				<a href="https://upssmile.com/90041/umai" target="_blank">
+				<div class="card" style="width: 18rem;">
+				  <img src="img/屋馬.jpg" class="card-img-top">
+				</a>
+				  <div class="card-body" style="">
+				  <h5>屋馬燒肉</h5>  
+				  <a href="https://www.umai.tw/umaimenu" target="_blank">(點我可連結到官方網站)</a>
+				  </div>
+				</div>					
+			</div>
+			
+			<div class="col-2" style="margin-left:10px;">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.5297294443285!2d120.68184531458907!3d24.153148084392356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d1d2591e555%3A0x6e3b4c7da822cb2!2z5bGL6aas54eS6IKJ5Lit5Y-L5bqX!5e0!3m2!1szh-TW!2stw!4v1623857129248!5m2!1szh-TW!2stw" width="250" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>			
+			</div>	
+			
+		</div>
+	</div>
+<br>
+	
+</section>
+	
+</body>
+</html>

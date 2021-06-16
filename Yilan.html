@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--分頁顯示的名稱  A-4 -->
+<title>宜蘭-美食推薦</title>
+		
+<!--  引入自己寫的CSS  A-2-->
+<link href="style.css" rel="stylesheet" type="text/css">
+	
+<!--ctrl+/ 打註解 : 這4個link 是給 bootstrap用的 B-2 -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+       
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!--給導覽列一個名字，叫做"bar"-->
+
+<!-- D-1 複製index.html 裡的導覽列, 一整個section 都要複製 -->
+<section id="bar">
+		<nav class="navbar navbar-expand-md  navbar-dark  " style="background-color: skyblue;">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<div class="navbar-nav mr-auto">
+						<!--class中的 avtive 代表被選擇中，所以在index.html中，active效果要放在"首頁"這個字上，在intro.html中，active效果要放在"自我介紹"這個字上-->
+					<a class="nav-item nav-link" href="index.html">  Home </a>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle active"" href="intro.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  Food
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						  <a class="dropdown-item" href="Taipei.html">北部美食推薦</a>
+						  <a class="dropdown-item" href="Taichung.html">其他美食推薦</a>
+						 </div>
+					</li>
+					<a class="nav-item nav-link" href="QA.html">景點</a>	
+					<a class="nav-item nav-link" href="contactus.html">End</a>
+					</div>
+	
+			</div>
+			
+		</nav>
+
+</section>
+
+			
+<section id="taipei1">
+	<div class="container">
+		<div class="row">
+			<div class="col-3">
+				
+			</div>
+			
+			<div class="col-6">
+					
+				<nav class="navbar navbar-light" style="background-color: white;">
+				  <form class="form-inline" >
+					<a class="btn "  href="Taipei.html">
+					<button class="btn btn-outline-info btn-lg" type="button">台北</button>
+					</a>&nbsp;
+					<a class="btn " href="New Taipei.html">
+					<button class="btn btn-outline-info btn-lg" type="button">新北</button>
+					</a>&nbsp;
+					<a class="btn "  href="Yilan.html">
+					<button class="btn btn-info btn-lg" type="button">宜蘭</button>
+					</a>&nbsp;
+					<a class="btn " href="Taoyuan.html">
+					<button class="btn btn-outline-info btn-lg" type="button">桃園</button>
+					</a>
+				  </form>
+				</nav>			 
+				
+			</div>
+			
+			<div class="col-3">
+				<p style="color:red;">(點圖片可連結到圖片來源網址)</p>				
+			</div>
+		</div>
+	</div>
+</section>
+
+<h4 style="margin-left:250px; font-weight:bolder;">宜蘭市</h4>	
+<section id="taipei2">
+	<div class="container">
+		<div class="row">
+			<div class="col-3">
+				<a href="https://blog.xuite.net/ncop/twblog1/140184255" target="_blank">
+				<div class="card" style="width: 18rem;">
+				  <img src="img/紅糟魷魚.jpg" class="card-img-top">
+				</a>
+				  <div class="card-body" style="">
+				  <h5>廟口紅糟魷魚</h5>    			  			 
+				  </div>
+				</div>
+					
+			</div>
+			
+			<div class="col-3" style="margin-left:10px;">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.050130375693!2d121.75072231460283!3d24.759470284101614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3467e4cff7a7154f%3A0x4bb951e37801a9d6!2z5a6c6Jit57SF57Of6a236a2a!5e0!3m2!1szh-TW!2stw!4v1623854008717!5m2!1szh-TW!2stw" width="250" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+			
+			<div class="col-3" >
+				<a href="https://www.facebook.com/344262585753993/posts/769840869862827/" target="_blank">
+				<div class="card" style="width: 18rem;">
+					<img src="img/北門綠豆沙牛乳大王.jpg" class="card-img-top" >
+					</a>
+					<div class="card-body">
+					<h5>北門綠豆沙牛乳大王</h5>
+    			    <a href="https://www.facebook.com/beimen.milking/" >(點我可連結到官方FB)</a>
+					</div>
+				</div>
+				
+			</div>
+			
+			
+			<div class="col-2" style="margin-left:10px;">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d854.9214370814406!2d121.75286129616813!3d24.76013327129025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3467e67c104533bd%3A0x234cdc74e8a9584a!2z5YyX6ZaA57ag6LGG5rKZ54mb5Lmz5aSn546L!5e0!3m2!1szh-TW!2stw!4v1623854136279!5m2!1szh-TW!2stw" width="250" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+			
+				
+			
+			
+		</div>
+	</div>
+<br>
+	
+</section>
+	
+</body>
+</html>

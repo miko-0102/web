@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--分頁顯示的名稱  A-4 -->
+<title>南部-美食推薦</title>
+		
+<!--  引入自己寫的CSS  A-2-->
+<link href="style.css" rel="stylesheet" type="text/css">
+	
+<!--ctrl+/ 打註解 : 這4個link 是給 bootstrap用的 B-2 -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+       
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!--給導覽列一個名字，叫做"bar"-->
+
+<!-- D-1 複製index.html 裡的導覽列, 一整個section 都要複製 -->
+<section id="bar">
+		<nav class="navbar navbar-expand-md  navbar-dark  " style="background-color: skyblue;">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<div class="navbar-nav mr-auto">
+						<!--class中的 avtive 代表被選擇中，所以在index.html中，active效果要放在"首頁"這個字上，在intro.html中，active效果要放在"自我介紹"這個字上-->
+					<a class="nav-item nav-link" href="index.html">  Home </a>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle active"" href="intro.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  Food
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						  <a class="dropdown-item" href="Taipei.html">北部美食推薦</a>
+						  <a class="dropdown-item" href="Taichung.html">其他美食推薦</a>
+						 </div>
+					</li>
+					<a class="nav-item nav-link" href="QA.html">景點</a>	
+					<a class="nav-item nav-link" href="contactus.html">End</a>
+					</div>
+	
+			</div>
+			
+		</nav>
+
+</section>
+
+			
+<section id="taipei1">
+	<div class="container">
+		<div class="row">
+			<div class="col-3">
+				
+			</div>
+			
+			<div class="col-6">
+					
+				<nav class="navbar navbar-light" style="background-color: white;">
+				  <form class="form-inline" >
+					<a class="btn "  href="Taichung.html">
+					<button class="btn btn-outline-info btn-lg" type="button">中部</button>
+					</a>&nbsp;
+					<a class="btn " href="South.html">
+					<button class="btn btn-info btn-lg" type="button">南部</button>
+					</a>&nbsp;
+					<a class="btn "  href="east.html">
+					<button class="btn btn-outline-info btn-lg" type="button">東部</button>
+					</a>			
+				  </form>
+				</nav>						
+			</div>
+			
+			<div class="col-3">
+				<p style="color:red;">(點圖片可連結到圖片來源網址)</p>				
+			</div>
+		</div>
+	</div>
+</section>
+
+<h4 style="margin-left:250px; font-weight:bolder;">台南</h4>	
+<section id="taipei2">
+	<div class="container">
+		<div class="row">
+			<div class="col-3">
+				<a href="https://chiaoda.com/chiu-ricenoodleswithsquid/" target="_blank">
+				<div class="card" style="width: 18rem;">
+				  <img src="img/小卷米粉.jpg" class="card-img-top">
+				</a>
+				  <div class="card-body" style="">
+				  <h5>邱家小卷米粉</h5>  
+				  </div>
+				</div>					
+			</div>
+			
+			<div class="col-3" style="margin-left:10px;">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.8224277174068!2d120.19529851456372!3d22.99355638496778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e7664e96d5667%3A0x94371a2263d83337!2z6YKx5a625bCP5Y2357Gz57KJ!5e0!3m2!1szh-TW!2stw!4v1623857355778!5m2!1szh-TW!2stw" width="250" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>			
+			
+			
+			<div class="col-3">
+				<a href="https://qqblog.tw/blog/post/winchangbeef" target="_blank">
+				<div class="card" style="width: 18rem;">
+				  <img src="img/牛肉湯.jpg" class="card-img-top">
+				</a>
+				  <div class="card-body" style="">
+				  <h5>文章牛肉湯</h5>  
+				  <p style="color:red;">現在文章牛肉湯地址是新店面的~</p>
+				  <p style="color:red;">我放的是舊店面的地址</p>
+				  <p style="color:red;">不要跑錯家唷!舊店面比較好吃~</p>
+				  </div>
+				</div>					
+			</div>
+			
+			<div class="col-2" style="margin-left:10px;">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.680455830017!2d120.16755321480034!3d22.998775084965118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e761abc9e5179%3A0x1917325f5e67be64!2zNzA45Y-w5Y2X5biC5a6J5bmz5Y2A5a6J5bmz6LevNTkw6Jmf!5e0!3m2!1szh-TW!2stw!4v1623858220165!5m2!1szh-TW!2stw" width="250" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>			
+			</div>				
+		</div>
+	</div>
+<br>
+	
+</section>
+
+<h4 style="margin-left:250px; font-weight:bolder;">嘉義&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 高雄</h4>	
+<section id="taipei2">
+	<div class="container">
+		<div class="row">
+			<div class="col-3">
+				<a href="https://365dailydrinks.com/grapefruit-greentea-chiayi/" target="_blank">
+				<div class="card" style="width: 18rem;">
+				  <img src="img/源興御香屋.jpg" class="card-img-top">
+				</a>
+				  <div class="card-body" style="">
+				  <h5>源興御香屋</h5>  
+				  <p style="color:red;">大推!葡萄柚綠!!!一定要加梅子</p>
+				  </div>
+				</div>					
+			</div>
+			
+			<div class="col-3" style="margin-left:10px;">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.4638534980436!2d120.4471015145741!3d23.47979638472345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e94318fd7a39b%3A0x52860b6fb718937d!2z5rqQ6IiI5b6h6aaZ5bGL!5e0!3m2!1szh-TW!2stw!4v1623863186367!5m2!1szh-TW!2stw" width="250" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>			
+			
+				
+			<div class="col-3">
+				<a href="https://travel.ettoday.net/article/1237793.htm" target="_blank">
+				<div class="card" style="width: 18rem;">
+				  <img src="img/朱爺爺QQ蛋.jpg" class="card-img-top">
+				</a>
+				  <div class="card-body" style="">
+				  <h5>朱爺爺QQ蛋</h5>  
+				  </div>
+				</div>					
+			</div>
+			
+			<div class="col-2" style="margin-left:10px;">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.2136852555573!2d120.30652571455562!3d22.608494285164344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e036f0391e81b%3A0x759875a6a9cea1ac!2z5pyx54i654i6UVHom4vlnLDnk5znkIM!5e0!3m2!1szh-TW!2stw!4v1623863710706!5m2!1szh-TW!2stw" width="250" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>				
+		</div>
+	</div>
+<br>
+<h4 style="margin-left:250px; font-weight:bolder;">屏東</h4>	
+<section id="taipei2">
+	<div class="container">
+		<div class="row">
+			<div class="col-3">
+				<a href="https://dantrips.com/post-52295664/" target="_blank">
+				<div class="card" style="width: 18rem;">
+				  <img src="img/黃家綠豆蒜.jpg" class="card-img-top">
+				</a>
+				  <div class="card-body" style="">
+				  <h5>黃家綠豆蒜</h5>  
+				  </div>
+				</div>					
+			</div>
+			
+			<div class="col-3" style="margin-left:10px;">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3697.458922490631!2d120.71075411454444!3d22.07028408544359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3471b7880ebab35f%3A0x9278104120123185!2z5q2j6KiYIOm7g-Wutue2oOixhuiSnA!5e0!3m2!1szh-TW!2stw!4v1623864287965!5m2!1szh-TW!2stw" width="250" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>							
+		</div>
+	</div>
+	
+</section>
+	
+</body>
+</html>
